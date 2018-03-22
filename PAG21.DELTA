@@ -1,0 +1,40 @@
+OBJECT Modification "Customer Card"(Page 21)
+{
+  OBJECT-PROPERTIES
+  {
+    Date=03/05/18;
+    Time=[ 8:02:06 PM];
+    Modified=Yes;
+    Version List=NAVW110.0.00.19421;
+  }
+  PROPERTIES
+  {
+    Target="Customer Card"(Page 21);
+  }
+  CHANGES
+  {
+    { Insertion         ;InsertAfter=Action 74;
+                         ChangedElements=ActionCollection
+                         {
+                           { 50101   ;2   ;Action    ;
+                                           Name=My Action;
+                                           RunObject=Codeunit 50100 }
+                         }
+                          }
+    { Insertion         ;InsertAfter=Control 28;
+                         ChangedElements=ControlCollection
+                         {
+                           { 50100;2  ;Field     ;
+                                       SourceExpr="My Field" }
+
+                         }
+                          }
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+

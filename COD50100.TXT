@@ -1,0 +1,38 @@
+OBJECT Codeunit 50100 MyCodeunit
+{
+  OBJECT-PROPERTIES
+  {
+    Date=03/05/18;
+    Time=10:05:42 PM;
+    Modified=Yes;
+    Version List=;
+  }
+  PROPERTIES
+  {
+    TableNo=18;
+    OnRun=BEGIN
+            MESSAGE(MyFunction(Rec."My Field",2));
+          END;
+
+  }
+  CODE
+  {
+
+    PROCEDURE MyFunction@50102(Str@50100 : Text;Cnt@50101 : Integer) : Text;
+    VAR
+      Res@1170000002 : Text;
+    BEGIN
+      Res := '';
+      WHILE(Cnt > 0) DO
+      BEGIN
+        Res := Res + Str;
+        Cnt := Cnt -1;
+      END;
+      EXIT(Res);
+    END;
+
+    BEGIN
+    END.
+  }
+}
+
