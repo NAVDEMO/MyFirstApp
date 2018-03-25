@@ -3,7 +3,7 @@ OBJECT Modification Customer(Table 18)
   OBJECT-PROPERTIES
   {
     Date=03/05/18;
-    Time=[ 7:51:19 PM];
+    Time=[ 7:50:19 PM];
     Modified=Yes;
     Version List=NAVW110.0.00.18609;
   }
