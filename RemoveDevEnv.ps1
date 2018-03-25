@@ -1,2 +1,2 @@
-﻿$containerName = Split-Path $PSScriptRoot -Leaf
-Remove-NavContainer -containerName $containerName
+﻿$settings = Get-Content (Join-Path $PSScriptRoot "Settings.json") | ConvertFrom-Json
+Remove-NavContainer -containerName $Settings.containerName

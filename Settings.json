@@ -1,0 +1,6 @@
+﻿{
+	"containerName" : "myfirstapp",
+    "imageName" : "microsoft/dynamics-nav:2017-cu13",
+	"sourceFolder" : "Source",
+	"objectsFolder" : "Objects"
+}
