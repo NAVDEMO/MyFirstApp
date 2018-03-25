@@ -1,1 +1,3 @@
-* text=crlf
+*.txt eol=crlf
+*.delta eol=crlf
+'.ps1 eol=crlf
