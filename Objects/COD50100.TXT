@@ -11,7 +11,8 @@ OBJECT Codeunit 50100 MyCodeunit
   {
     TableNo=18;
     OnRun=BEGIN
-            MESSAGE(MyFunction(Rec."My Field",2));
+            MESSAGE('Freddy');
+            //MESSAGE(MyFunction(Rec."My Field",2));
           END;
 
   }
