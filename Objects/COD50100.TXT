@@ -3,7 +3,7 @@ OBJECT Codeunit 50100 MyCodeunit
   OBJECT-PROPERTIES
   {
     Date=03/05/18;
-    Time=10:06:42 PM;
+    Time=10:05:42 PM;
     Modified=Yes;
     Version List=;
   }
